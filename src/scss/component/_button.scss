@@ -1,0 +1,36 @@
+/*button{
+  background-color: inherit;
+  border: none;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: $default_font;
+  position: relative;
+  &.default{
+    background-color: white;
+    color: gray;
+    font-size: 14px;
+    padding: 4px 0;
+  }
+  &:active{ 
+    border-bottom: 1px solid $green_color;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $green_color;
+    bottom: 0px;
+    transition: .4s ease-in-out;
+  }
+  &:hover::before{
+    width: 100%;
+
+  }
+
+}

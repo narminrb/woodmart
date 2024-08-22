@@ -1,0 +1,98 @@
+#bike{
+  font-family: $default_font;
+  margin: 35px;
+  .bike_part {
+    @include Flexible(flex-start,flex-start,row,wrap, 0px);
+    width: 100%;
+    height: 510px;
+    color: #fff; 
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    position: relative;
+
+    .bike_top_img {
+      @include Flexible(flex-start,flex-start,column,wrap,5px);
+      position: relative;
+      width: 100%;
+      height: 80%;
+      overflow: hidden; 
+  }
+  
+  .bike_top_text {
+    @include Flexible(flex-start,center,column,wrap,5px);
+      position: absolute;
+      top: 30px;
+      left: 70px;
+      z-index: 2;  
+  }
+    
+
+  
+  .bike_top_img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease-in-out;
+  }
+  
+ 
+  h2 {
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.6);
+
+  
+  }
+  h1{
+    font-size: 54px;
+    line-height: 64px;
+    margin-top: 7px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+
+  }
+  p{
+    line-height: 26px;
+    font-size: 16px;
+  }
+.shop_btn_price{
+  @include Flexible(flex-start,center,row,wrap,30px);
+  
+  .shop_btn {
+    margin-top: 16px;
+    padding: 12px 18px;
+    background-color: $green_color;
+    a{
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    }
+    &:hover{
+      background-color: darken($green_color, 10%);
+    }
+  }
+  h2{
+    font-size: 54px;
+    line-height: 64px;
+    margin-top: 7px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0;
+
+  }
+}
+.bike_img {
+  @include Flexible(center,center,row,wrap,5px);
+   position: absolute;
+    top: 30px;
+    left: 480px;
+    z-index: 2;  
+}
+
+  }
+
+}

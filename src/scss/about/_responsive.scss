@@ -1,0 +1,32 @@
+/* Default styles for mobile (phones) */
+.responsive-col {
+  width: 100%; /* Full width on small screens */
+}
+
+/* Styles for small devices (phones landscape) and up */
+@media (min-width: 576px) {
+  .responsive-col {
+      width: 50%; /* Half width on small devices */
+  }
+}
+
+/* Styles for medium devices (tablets) and up */
+@media (min-width: 768px) {
+  .responsive-col {
+      width: 33.33%; /* One-third width on medium devices */
+  }
+}
+
+/* Styles for large devices (desktops) and up */
+@media (min-width: 992px) {
+  .responsive-col {
+      width: 16.67%; /* Two columns width on large devices */
+  }
+}
+
+/* Styles for extra-large devices (large desktops) and up */
+@media (min-width: 1200px) {
+  .responsive-col {
+      width: 10%; /* Adjust as needed for extra-large devices */
+  }
+}

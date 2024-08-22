@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson7 SASS/SCSS</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../src/scss/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+</head>
+<body>
+<header id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-sm-6 col-md-4">
+        <div class="logo">
+          <img src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="logo">
+        </div>
+      </div>
+      <div class="col-lg-7 col-sm-6 col-md-2">        
+        <div class="header_center">
+          <div class="search">
+            <input type="text" placeholder="Search for products">
+           </div>
+           <div class="category">
+            <input type="hidden">
+            <a href="#">
+              <span>Select Category <i class="ri-arrow-down-s-line"></i></span>
+            </a>
+           </div>
+           <div class="search_button">
+            <button><i class="ri-search-line"></i></button>
+           </div>
+        </div>
+      </div>
+      <div class="col-lg-3  col-sm-6 col-md-6">
+       <div class="header_right">
+        <div class="right">
+          <div class="right__icon">
+            <i class="ri-phone-line"></i>
+          </div>
+          
+          <div class="right__side">
+            <h5>24/7 SUPPORT</h5>
+            <p>+73 099 321 312</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right__icon">
+            <i class="ri-shopping-bag-line"></i>
+          </div>
+         
+          <div class="right__side">
+            <h5>$0.00</h5>
+            <p>0 items</p>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav>
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="browse">
+         <div class="browse_container">
+          <i class="ri-menu-line menu-icon"></i>
+          <h3>
+            Browse Categories</h3>
+              <i class="ri-arrow-down-s-line arrow-icon"></i>
+         </div>
+        </div>
+      </div>
+      <div class="col-5">
+        
+          <ul class="menu_list">
+            <li>
+              <a href="#">Home <i class="ri-arrow-drop-down-line"></i></a>
+            </li>
+            <li>
+              <a href="#">Shop <i class="ri-arrow-drop-down-line"></i></a>
+            </li>
+            <li>
+              <a href="#">Blog <i class="ri-arrow-drop-down-line"></i></a>
+            </li>
+            <li>
+              <a href="#">Pages <i class="ri-arrow-drop-down-line"></i></a>
+            </li>
+            <li>
+              <a href="#">Elements <i class="ri-arrow-drop-down-line"></i></a>
+            </li>
+            <li>
+              <a href="#">Buy</a>
+            </li>
+          </ul>
+        
+      </div>
+      <div class="col-lg-4 col-sm-6 col-md-12">
+        <div class="nav_right">
+          <a>Login</a>
+          <span>/</span>
+          <a>Register</a>
+          <div class="heart">
+            <i class="ri-heart-line"><span>0</span></i>
+            <a>Wishlist</a>
+          </div>
+          <div class="compare">
+            <i class="ri-shuffle-fill"><span>0</span></i>
+            <a>Compare</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<main>
+ <section id="infobox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-6 col-md-4">
+      <div class="info_container">
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/01-chair.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>Home Chair</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>But I must plain</p>
+            </div>
+          </div>
+        </div>
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/02-lamp.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>Wall Decor</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>These always</p>
+            </div>
+          </div>
+        </div>
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/03-smartwatch.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>Smart Watch</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>Preferred order</p>
+            </div>
+          </div>
+        </div>
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/04-desktop.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>Home TV</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>Cum soluta nob</p>
+            </div>
+          </div>
+        </div>
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/05-app.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>Smartphone</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>Sapiente delect</p>
+            </div>
+          </div>
+        </div>
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/06-washing-machine.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>Appliances</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>Less in design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+
+      </div>
+    </div>
+  </div>
+
+
+
+ </section>
+<section id="products">
+  <div class="container">
+    <div class="row">
+     <div class="col-lg-5 col-sm-12 col-md-12">
+     <div class="row">
+      <div class="col-lg-12 col-sm-12 col-md-12">
+        <div class="product">          
+        <div class="left_top_img">
+          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-grid-banner-1.jpg.webp" alt="">
+         <div class="left_top_text">
+          <h2>LIGHTING MAINTENANCE</h2>
+          <h1>The Interior And
+            <br>            
+              Exterior Lights
+          </h1>
+          <div class="shop_btn">
+            <a>Shop Now</a>
+          </div>
+         </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-sm-12 col-md-12">
+        <div class="product_sec">
+          <div class="left_bottom_img">
+            <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-grid-banner-2.jpg.webp" alt="">
+            <div class="left_bottom_text">
+              <h2>PROJECTING SURROUNDED</h2>
+              <h1>Projecting Literature
+                <br>                           
+                  Surrounded Delightful
+              </h1>
+              <div class="shop_btnsec">
+                <a>Shop Now</a>
+              </div>
+            </div>
+
+           
+          
+          </div>
+          </div>
+      </div>
+     </div>
+     </div>
+     <div class="col-lg-7 col-sm-12 col-md-12">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12">
+          <div class="product_third">
+            <div class="inside">
+              <h2>VIRTUAL REALITY HEADSET</h2>
+              <h1>Close Your Eyes And Think
+              </h1>
+              <h1> Of Virtual Reality</h1>
+              <div class="shop_btnsec">
+                <a class="first">Shop Now</a>
+                <a class="second">Shop Now</a>
+              </div>
+            
+            </div>
+            </div>
+
+        </div>
+        <div class="col-lg-12 col-sm-12 col-md-12">
+          <div class="product_fourth">
+            <div class="right_bottom_img">
+              <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-grid-banner-3-opt.jpg.webp" alt="">
+             <div class="right_bottom_text">
+              <h2>CERTAIN FORBADE PICTURE </h2>
+              <h1>Building Concerns
+                <br>                           
+                
+                  Servants In He Outlived
+              </h1>
+              <div class="shop_btnfourth">
+                <a>Shop Now</a>
+              </div>
+             </div>
+            </div>
+            </div>
+        </div>
+        
+      </div>
+     </div>
+    </div>
+  </div>
+</section>
+<section id="newarrivals">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="arrival">          
+              <div class="left_top_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-4-opt-315x400.jpg" alt="">
+               <div class="left_top_text">
+                <h2>MANY HEADINGS</h2>
+                <h1>50mm Leans 
+                  <br>            
+                  For All Camers
+                </h1>
+                <div class="shop_btn">
+                  <a>Shop Now</a>
+                </div>
+               </div>
+              </div>
+              </div>
+
+          </div>
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="arrivalsec">          
+              <div class="left_bottom_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-5-opt-315x400.jpg" alt="">
+               <div class="left_bottom_text">
+                <h2>HUGE TO FORSWEAR</h2>
+                <h1>Discount Jewelry
+                  <br>            
+                  20% Get it Now
+                </h1>
+                <div class="shop_btn">
+                  <a>Shop Now</a>
+                </div>
+               </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9 col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="arrival_menu">
+            <div class="left_part">
+              <div class="left_menu">
+                <h1>New arrivals</h1>
+              </div>
+              <div class="right_menu">
+                <ul>
+                  <li>
+                    <a href="#">New</a>
+                  </li>
+                  <li>
+                    <a href="#">Featured</a>
+                  </li>
+                  <li>
+                    <a href="#">Top sellers</a>
+                  </li>
+                </ul>                
+              </div>
+            </div>
+              <div class="icons">
+                <i class="ri-arrow-left-s-line"></i>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+             
+            </div>
+
+          </div>      
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="items">
+              <div class="items_contain">
+               <div class="imgpart">
+                <div class="badge">New</div> 
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-3-opt-634x800.jpg.webp" alt="">
+                <div class="icon_bar">
+                  <i class="ri-shopping-cart-line"></i>
+                  <i class="ri-search-line"></i>
+                  <i class="ri-shuffle-line"></i>
+                  <i class="ri-heart-line"></i>
+                </div>
+               </div>
+                <div class="textpart">
+                  <h1>Loft Chair</h1>
+                  <h4>Retail</h4>
+                   <h2>$420.00</h2>
+                </div>
+
+              </div>
+              <div class="items_contain">
+              <div class="imgpart">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-4-opt-634x800.jpg.webp" alt="">
+                <div class="icon_bar">
+                  <i class="ri-shopping-cart-line"></i>
+                  <i class="ri-search-line"></i>
+                  <i class="ri-shuffle-line"></i>
+                  <i class="ri-heart-line"></i>
+                </div>
+              </div>
+                <div class="textpart">
+                  <h1>Scarf Hairband</h1>
+                  <h4>Retail</h4>
+                   <h2>$255.00</h2>
+                </div>
+                
+              </div>
+              <div class="items_contain">
+                <div class="imgpart">
+                  <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-5-opt-634x800.jpg.webp" alt="">
+                  <div class="icon_bar">
+                    <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shuffle-line"></i>
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="textpart">
+                  <h1>Wireless Earpods</h1>
+                  <h4>Retail</h4>
+                   <h2>$362.00</h2>
+                </div>
+                
+              </div>
+              <div class="items_contain">
+                <div class="imgpart">
+                  <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-6-opt-634x800.jpg.webp" alt="">
+                  <div class="icon_bar">
+                    <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shuffle-line"></i>
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="textpart">
+                  <h1>Blue Earrings</h1>
+                  <h4>Retail</h4>
+                   <h2>$224.00</h2>
+                </div>
+                
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="items">
+              <div class="items_contain">
+               <div class="imgpart">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-7-opt-634x800.jpg.webp" alt="">
+                <div class="icon_bar">
+                  <i class="ri-shopping-cart-line"></i>
+                  <i class="ri-search-line"></i>
+                  <i class="ri-shuffle-line"></i>
+                  <i class="ri-heart-line"></i>
+                </div>
+               </div>
+                <div class="textpart">
+                  <h1>A Vacuum Cleaner</h1>
+                  <h4>Retail</h4>
+                   <h2>$248.00</h2>
+                </div>
+
+              </div>
+              <div class="items_contain">
+              <div class="imgpart">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-8-opt-634x800.jpg.webp" alt="">
+                <div class="icon_bar">
+                  <i class="ri-shopping-cart-line"></i>
+                  <i class="ri-search-line"></i>
+                  <i class="ri-shuffle-line"></i>
+                  <i class="ri-heart-line"></i>
+                </div>
+              </div>
+                <div class="textpart">
+                  <h1>Men’s Denim Pants</h1>
+                  <h4>Retail</h4>
+                   <h2>$196.00</h2>
+                </div>
+                
+              </div>
+              <div class="items_contain">
+                <div class="imgpart">
+                  <div class="badge">-20%</div> 
+                  <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-15-opt-634x800.jpg.webp" alt="">
+                  <div class="icon_bar">
+                    <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shuffle-line"></i>
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="textpart">
+                  <h1>Wash Machine</h1>
+                  <h4>Retail</h4>
+                   <h2>$435.00</h2>
+                </div>
+                
+              </div>
+              <div class="items_contain">
+                <div class="imgpart">
+                  <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-10-opt-634x800.jpg.webp" alt="">
+                  <div class="icon_bar">
+                    <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shuffle-line"></i>
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="textpart">
+                  <h1>Skirt</h1>
+                  <h4>Retail</h4>
+                   <h2>$180.00</h2>
+                </div>
+                
+              </div>
+            </div>
+          </div> 
+         
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<section id="threeimages">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 ">
+       <div class="whole">
+            
+          <div class="left_top_img">
+            <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-6-opt.jpg.webp" alt="">
+           <div class="left_top_text">
+            <h2>AUTHOR OUR BUSINESS</h2>
+            <h1>There Are Some
+              <br>            
+                
+                Redeeming Factors
+            </h1>
+            <div class="shop_btn">
+              <a>Shop Now</a>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+        <div class="col-4 ">     
+            <div class="whole">
+              <div class="left_top_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-7-opt.jpg.webp" alt="">
+               <div class="left_top_text">
+                <h2>THE WRONG REASONS</h2>
+                <h1>Everything You
+                  <br>            
+                   
+                    Love About Design
+                </h1>
+                <div class="shop_btn">
+                  <a>Shop Now</a>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+           
+          <div class="col-4">        
+              <div class="whole">
+                <div class="left_top_img">
+                  <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-9-opt.jpg.webp" alt="">
+                 <div class="left_top_text">
+                  <h2>MADE THE REQUIRED</h2>
+                  <h1>Full Access to
+                    <br>            
+                      
+                      Hundreds of Shopin
+                  </h1>
+                  <div class="shop_btn">
+                    <a>Shop Now</a>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+              
+
+      
+      
+    </div>
+  </div>
+</section>
+<section id="bestoffer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-lg-12 col-sm-6 col-md-3">
+            <div class="arrival_menu">
+            <div class="left_part">
+              <div class="left_menu">
+                <h1>Best Offer</h1>
+              </div>
+              <div class="right_menu">
+                <ul>
+                  <li>
+                    <a href="#">New</a>
+                  </li>
+                  <li>
+                    <a href="#">Featured</a>
+                  </li>
+                  <li>
+                    <a href="#">Top sellers</a>
+                  </li>
+                </ul>                
+              </div>
+            </div>
+              <div class="icons">
+                <i class="ri-arrow-left-s-line"></i>
+                <i class="ri-arrow-right-s-line"></i>
+              </div>
+             
+            </div>
+
+          </div>      
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="items">
+              <div class="items_contain">
+               <div class="imgpart">
+                
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-11-opt-634x800.jpg.webp" alt="">
+                <div class="icon_bar">
+                  <i class="ri-shopping-cart-line"></i>
+                  <i class="ri-search-line"></i>
+                  <i class="ri-shuffle-line"></i>
+                  <i class="ri-heart-line"></i>
+                </div>
+               </div>
+                <div class="textpart">
+                  <h1>Smart Watch</h1>
+                  <h4>Retail</h4>
+                   <h2>$620.00</h2>
+                </div>
+
+              </div>
+              <div class="items_contain">
+              <div class="imgpart">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-12-opt-634x800.jpg.webp" alt="">
+                <div class="icon_bar">
+                  <i class="ri-shopping-cart-line"></i>
+                  <i class="ri-search-line"></i>
+                  <i class="ri-shuffle-line"></i>
+                  <i class="ri-heart-line"></i>
+                </div>
+              </div>
+                <div class="textpart">
+                  <h1>Microwave Oven</h1>
+                  <h4>Retail</h4>
+                   <h2>$315.00</h2>
+                </div>
+                
+              </div>
+              <div class="items_contain">
+                <div class="imgpart">
+                  <div class="badge">New</div> 
+                  <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-13-opt-634x800.jpg.webp" alt="">
+                  <div class="icon_bar">
+                    <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shuffle-line"></i>
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="textpart">
+                  <h1>QLED Smart TV</h1>
+                  <h4>Retail</h4>
+                   <h2>$1,268.00</h2>
+                </div>
+                
+              </div>
+              <div class="items_contain">
+                <div class="imgpart">
+                  <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-14-opt-634x800.jpg.webp" alt="">
+                  <div class="icon_bar">
+                    <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shuffle-line"></i>
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="textpart">
+                  <h1>Android Tablet</h1>
+                  <h4>Retail</h4>
+                   <h2>$799.00</h2>
+                </div>
+                
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="items">
+              <div class="items_contain">
+               <div class="imgpart">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-7-opt-634x800.jpg.webp" alt="">
+                <div class="icon_bar">
+                  <i class="ri-shopping-cart-line"></i>
+                  <i class="ri-search-line"></i>
+                  <i class="ri-shuffle-line"></i>
+                  <i class="ri-heart-line"></i>
+                </div>
+               </div>
+                <div class="textpart">
+                  <h1>A Vacuum Cleaner</h1>
+                  <h4>Retail</h4>
+                   <h2>$248.00</h2>
+                </div>
+
+              </div>
+              <div class="items_contain">
+              <div class="imgpart">
+                <div class="badge">-20%</div> 
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-15-opt-634x800.jpg.webp" alt="">
+                <div class="icon_bar">
+                  <i class="ri-shopping-cart-line"></i>
+                  <i class="ri-search-line"></i>
+                  <i class="ri-shuffle-line"></i>
+                  <i class="ri-heart-line"></i>
+                </div>
+              </div>
+                <div class="textpart">
+                  <h1>Wash Machine</h1>
+                  <h4>Retail</h4>
+                   <h2>$435.00</h2>
+                </div>
+                
+              </div>
+              <div class="items_contain">
+                <div class="imgpart">
+                  <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-16-opt-634x800.jpg.webp" alt="">
+                  <div class="icon_bar">
+                    <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shuffle-line"></i>
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="textpart">
+                  <h1>Fridge</h1>
+                  <h4>Retail</h4>
+                   <h2>$579.00</h2>
+                </div>
+                
+              </div>
+              <div class="items_contain">
+                <div class="imgpart">
+                  <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-17-opt-634x800.jpg.webp" alt="">
+                  <div class="icon_bar">
+                    <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shuffle-line"></i>
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+                <div class="textpart">
+                  <h1>Portable HDD</h1>
+                  <h4>Retail</h4>
+                   <h2>$218.00</h2>
+                </div>
+                
+              </div>
+            </div>
+          </div> 
+         
+        </div>
+        
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-md-12">
+            <div class="arrival">          
+              <div class="left_top_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-10-opt-315x400.jpg" alt="">
+               <div class="left_top_text">
+                <h2>LIKE SAYING</h2>
+                <h1>Get $200 
+                  <br>            
+                  
+                    off Pixel 3 XL
+                </h1>
+                <div class="shop_btn">
+                  <a>Shop Now</a>
+                </div>
+               </div>
+              </div>
+              </div>
+
+          </div>
+          <div class="col-12">
+            <div class="arrivalsec">          
+              <div class="left_bottom_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-11-opt-315x400.jpg" alt="">
+               <div class="left_bottom_text">
+                <h2>BEATAE VITAE</h2>
+                <h1>A Display
+                  <br>                              
+                  of Perfection
+                </h1>
+                <div class="shop_btn">
+                  <a>Shop Now</a>
+                </div>
+               </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="bike">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-md-12">
+        <div class="bike_part">          
+          <div class="bike_top_img">
+            <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-bicycle-bg-opt.jpg?id=27500" alt="">
+           <div class="bike_top_text">
+            <h2>INITIAL INTEREST SOON</h2>
+            <h1>Bike For
+              <br>            
+              
+               Professional
+            </h1>
+            <p>Using dummy content or fake information in 
+              <br>
+
+              the Web design process can result in with 
+              <br>
+              products design and feather it least.
+            </p>
+            
+          <div class="shop_btn_price">
+            <div class="shop_btn">
+              <a>Shop Now</a>
+            </div>
+            <h2>800$</h2>
+          </div>
+           </div>
+          </div>
+          <div class="bike_img">
+            <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-bicycle-bg-opt-1.png.webp" alt="">
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="newarticles">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-6 col-md-6">
+        <div class="text">
+          <h3>THEN A PROTOTYPE OR BETA</h3>
+          <h1>OUR NEW ARTICLES</h1>
+          <p>At worst the discussion is at least working towards the final goal of your site 
+            <br>
+            where questions about lorem ipsum don’t.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section id="articleimg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-6 col-md-6">
+       <div class="all">
+        <div class="items_contain">
+          <div class="imgpart">
+            <div class="badge">23
+              <br>
+               jul</div>
+           <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-blog-1-opt.jpg.webp" alt="">
+          
+          </div>
+         
+            <div class="shop_btn">
+              <a>Design Trends, Furniture</a>
+            </div>
+
+          
+           <div class="textpart">
+             <h1>Seating collection 
+              <br>
+              inspiration</h1>
+              <div class="meta">
+                <ul>
+                  <li>
+                    <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt="">
+                  </li>
+                  <li>
+                    <span>S. Rogers</span>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-message-2-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-share-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+             <p>
+              Ac haca ullamcorper donec ante habi 
+              <br>
+              tasse donec imperdiet eturpis varius 
+              <br>
+              per a augue magna hac. Nec ...				</p>
+              <h2>Continue reading</h2>
+           </div>
+
+         </div>
+   
+    
+        <div class="items_contain">
+          <div class="imgpart">
+            <div class="badge">23
+              <br>
+               jul</div>
+           <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-blog-4-opt.jpg.webp" alt="">
+         
+          </div>
+          <div class="shop_btn">
+            <a>Design Trends, Furniture</a>
+          </div>
+
+           <div class="textpart">
+            <h1>Creative water features 
+              <br>
+              and exterior</h1>
+              <div class="meta">
+                <ul>
+                  <li>
+                    <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt="">
+                  </li>
+                  <li>
+                    <span>S. Rogers</span>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-message-2-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-share-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+             <p>
+             
+					Adipiscing hac imperdiet id blandit  			
+              <br>
+              varius scelerisque at sagittis libero dui
+              <br>
+              dis volutpat vehicula ...				</p>
+              <h2>Continue reading</h2>
+           </div>
+
+         </div>
+   
+      
+        <div class="items_contain">
+          <div class="imgpart">
+            <div class="badge">23
+              <br>
+               jul</div>
+           <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-blog-2-opt.jpg.webp" alt="">
+           
+          </div>
+          <div class="shop_btn">
+            <a>Design Trends, Furniture</a>
+          </div>
+
+           <div class="textpart">
+            <h1>Green interior design 
+              <br>
+              inspiration</h1>
+              <div class="meta">
+                <ul>
+                  <li>
+                    <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt="">
+                  </li>
+                  <li>
+                    <span>S. Rogers</span>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-message-2-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-share-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+             <p>
+              
+					Vivamus enim sagittis aptent hac mi dui  		
+              <br>
+              a per aptent suspendisse cras odio
+              <br>
+              bibendum augue rhoncus la...</p>
+              <h2>Continue reading</h2>
+           </div>
+
+         </div>
+    
+      
+        <div class="items_contain">
+          <div class="imgpart">
+            <div class="badge">23
+              <br>
+               jul</div>
+           <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-blog-3-opt.jpg.webp" alt="">
+          
+          </div>
+          <div class="shop_btn">
+            <a>Design Trends, Furniture</a>
+          </div>
+
+           <div class="textpart">
+            <h1>Minimalist design furniture 
+              <br>
+              2024</h1>
+              <div class="meta">
+                <ul>
+                  <li>
+                    <img src="https://woodmart.b-cdn.net/wp-content/uploads/2018/10/avatar-home.jpg.webp" alt="">
+                  </li>
+                  <li>
+                    <span>S. Rogers</span>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-message-2-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-share-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+             <p>
+              
+					      A taciti cras scelerisque 			
+              <br>
+              scelerisque gravida natoque nulla vestibulum 
+              <br>
+              turpis  primis adipiscing fauc...				</p>
+              <h2>Continue reading</h2>
+           </div>
+
+         </div>
+      
+       </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="lastcollage">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-12">
+            <div class="arrival">          
+              <div class="left_top_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/05/retail-banner-12-opt-1.jpg.webp" alt="">
+               <div class="left_top_text">
+                <h2>SUBSCRIBE NOW</h2>
+                <h1>Get Your Offer 
+                  <br>            
+                  
+                  Subscribe Us!
+                </h1>
+                <div class="shop_btn">
+                  <a>Shop Now</a>
+                </div>
+               </div>
+              </div>
+              </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-9 col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-4">
+              <div class="last_container">
+                <div class="header">
+                  <h1>Features Products</h1>
+                </div>
+                <div class="info_box">
+                  <div class="info_box_img">
+                    <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-18-opt-65x82.jpg" alt="">
+                  </div>
+                  <div class="info_box_content">
+                    <div class="info_box_title">
+                      <h5>Ear pods</h5>
+                    </div>
+                    <div class="ifo_box_inner">
+                        <p>$315.00</p>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                <hr>
+                <div class="info_box">
+                  <div class="info_box_img">
+                    <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-19-opt-65x82.jpg" alt="">
+                  </div>
+                  <div class="info_box_content">
+                    <div class="info_box_title">
+                      <h5>
+                        Portable HDD			</h5>
+                    </div>
+                    <div class="ifo_box_inner">
+                        <p>$255.00</p>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="info_box">
+                  <div class="info_box_img">
+                    <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-20-opt-65x82.jpg" alt="">
+                  </div>
+                  <div class="info_box_content">
+                    <div class="info_box_title">
+                      <h5>
+                        Leather Shoes			</h5>
+                    </div>
+                    <div class="ifo_box_inner">
+                        <p>$218.00</p>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                
+               
+              </div>
+
+
+          </div>
+        <div class="col-lg-4 col-sm-12 col-md-12">
+          <div class="last_container">
+            <div class="header">
+              <h1>Recent Products</h1>
+            </div>
+            <div class="info_box">
+              <div class="info_box_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-21-opt-65x82.jpg" alt="">
+              </div>
+              <div class="info_box_content">
+                <div class="info_box_title">
+                  <h5>
+                    Baseball Cap			</h5>
+                </div>
+                <div class="ifo_box_inner">
+                    <p>$148.00</p>
+                </div>
+                
+              </div>
+              
+            </div>
+            <hr>
+            <div class="info_box">
+              <div class="info_box_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-22-opt-65x82.jpg" alt="">
+              </div>
+              <div class="info_box_content">
+                <div class="info_box_title">
+                  <h5>
+                    
+				           White Chair</h5>
+                </div>
+                <div class="ifo_box_inner">
+                    <p>$224.00</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="info_box">
+              <div class="info_box_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-23-opt-65x82.jpg" alt="">
+              </div>
+              <div class="info_box_content">
+                <div class="info_box_title">
+                  <h5>
+                    	
+				            Men’s T-shirt</h5>
+                </div>
+                <div class="ifo_box_inner">
+                    <p>$187.00</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-md-12">
+          <div class="last_container">
+            <div class="header">
+              <h1>Best Offer</h1>
+            </div>
+            <div class="info_box">
+              <div class="info_box_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-24-opt-65x82.jpg" alt="">
+              </div>
+              <div class="info_box_content">
+                <div class="info_box_title">
+                  <h5>Black Sunglasses</h5>
+                </div>
+                <div class="ifo_box_inner">
+                    <p>$135.00</p>
+                </div>
+                
+              </div>
+              
+            </div>
+            <hr>
+            <div class="info_box">
+              <div class="info_box_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-25-opt-65x82.jpg" alt="">
+              </div>
+              <div class="info_box_content">
+                <div class="info_box_title">
+                  <h5>
+                    Mechanical Watches</h5>
+                </div>
+                <div class="ifo_box_inner">
+                    <p>$198.00</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="info_box">
+              <div class="info_box_img">
+                <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-product-26-opt-65x82.jpg" alt="">
+              </div>
+              <div class="info_box_content">
+                <div class="info_box_title">
+                  <h5>
+                    Loft Kettle</h5>
+                </div>
+                <div class="ifo_box_inner">
+                    <p>$118.00</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        </div>
+    
+      </div>
+    </div>
+  </div>
+</section>
+<section id="lastinfobox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-sm-6 col-md-6">
+      <div class="info_container">
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/shipping-retail.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>Free Shipping</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>Carrier Information</p>
+            </div>
+          </div>
+        </div>
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/online-payment-retail.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>Online Payment</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>Payment Methods</p>
+            </div>
+          </div>
+        </div>
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/support-retail.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>24/7 support</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>Unlimited Helpdesk</p>
+            </div>
+          </div>
+        </div>
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/safe-retail.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>100% safe</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>view our benefits</p>
+            </div>
+          </div>
+        </div>
+        <div class="info_box">
+          <div class="info_box_img">
+            <img src="https://woodmart.xtemos.com/wp-content/uploads/2019/04/return-retail.svg" alt="">
+          </div>
+          <div class="info_box_content">
+            <div class="info_box_title">
+              <h5>Free Returns</h5>
+            </div>
+            <div class="ifo_box_inner">
+                <p>Track or off orders</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+            
+
+      </div>
+    </div>
+  </div>
+
+
+
+ </section>
+ 
+</main>
+<footer>
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 col-md-12">
+          <div class="logcont">
+            <div class="logos">
+              <img src="https://woodmart.b-cdn.net/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="logo">
+            </div>
+            <div class="cont">
+              <ul>
+                <li><p>
+                  Condimentum adipiscing vel neque dis nam
+                <br>
+                parturient orci at dis nam scelerisque neque.
+              </p>
+            </li>
+              </ul>
+              <div class="sum">
+                <div class="item">
+                  <i class="ri-send-plane-fill"></i>
+                  <p>451 Wall Street, UK, London</p>
+                </div>
+                <div class="item">
+                  <i class="ri-smartphone-line"></i>
+                  <p>Phone: (064) 332-1233</p>
+                </div>
+                <div class="item">
+                  <i class="ri-mail-line"></i>
+                  <p>Fax: (099) 453-1357</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="buttons">
+             
+              <button class="face"><i class="ri-facebook-fill "></i></button>
+              <button class="twit"><i class="ri-twitter-fill "></i></button>
+              <button class="pint"><i class="ri-pinterest-line"></i></button>
+              <button class="link"><i class="ri-linkedin-fill"></i></button>
+              <button class="tele"><i class="ri-telegram-line "></i></button>
+
+             
+            </div>
+  
+          </div>
+          </div>
+        <div class="col-lg-8 col-sm-12 col-md-12">
+          <div class="row">
+            <div class="col-3">
+              <div class="footwords">
+                <h1>OUR STORES</h1>
+                <h3>New York</h3>
+                <h3>London SF</h3>
+                <h3>Cockfosters BP</h3>
+                <h3>Los Angeles</h3>
+                <h3>Chicago</h3>
+                <h3>Las Vegas</h3>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footwords">
+                <h1>USEFUL LINKS</h1>
+                <h3>Privacy Policy</h3>
+                <h3>Returns</h3>
+                <h3>Terms & Conditions</h3>
+                <h3>Contact Us</h3>
+                <h3>Latest News</h3>
+                <h3>Our Sitemap</h3>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footwords">
+                <h1>FOOTER MENU</h1>
+                <h3>Instagram profile</h3>
+                <h3>New Collection</h3>
+                <h3>Woman Dress</h3>
+                <h3>Contact Us</h3>
+                <h3>Latest News</h3>
+                <h3>Our Sitemap</h3>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footwords">
+                <h1>Costumer Service</h1>
+                <h3>About Us</h3>
+                <h3>Delivery Information</h3>
+                <h3>Privacy Policy</h3>
+                <h3>Terms & Conditions</h3>
+                <h3>Returns</h3>
+                <h3>Gift Certificaes</h3>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="finally">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-sm-6 col-md-6">
+       <div class="fin">
+        <div class="letter">
+          <img src="https://woodmart.b-cdn.net/wp-content/uploads/2019/04/retail-footer-ico-opt.png.webp" alt="">
+          <div class="let">
+            <h1>Join Our Newsletter Now</h1>
+            <p>Be the First to Know. Sign up to newsletter today</p>
+          </div>
+
+        </div>
+        <div class="search">
+          <input type="email" placeholder="your email address">
+          <button>Sign up</button>
+        </div>
+       </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

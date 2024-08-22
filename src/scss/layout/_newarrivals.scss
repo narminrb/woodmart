@@ -1,0 +1,304 @@
+#newarrivals{
+  font-family: $default_font;
+  margin: 60px;
+  .arrival {
+    @include Flexible(center,flex-start,row,wrap, 0px);
+    width: 100%;
+    height: 400px;
+    color: #fff; 
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+
+    .left_top_img {
+      @include Flexible(flex-start,flex-start,column,wrap,5px);
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; 
+  }
+  
+  .left_top_text {
+    @include Flexible(flex-start,center,column,wrap,5px);
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      z-index: 2;  
+  }
+  
+  .left_top_img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease-in-out;
+  }
+  
+  .left_top_img:hover img {
+      transform: scale(1.1);
+  }
+  h2 {
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 7px;
+    color: rgba(255, 255, 255, 0.6);
+
+  
+  }
+  h1{
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 7px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+
+  }
+
+  .shop_btn {
+    margin-top: 16px;
+    padding: 10px 14px;
+    border:2px solid rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+    a{
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    }
+    &:hover{
+      border:2px solid white;
+    }
+  }
+  }
+  .arrivalsec {
+    @include Flexible(center,flex-start,row,wrap, 0px);
+    width: 100%;
+    height: 400px;
+    color: #fff; 
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+
+    .left_bottom_img {
+      @include Flexible(flex-start,flex-start,column,wrap,5px);
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; 
+  }
+  
+  .left_bottom_text {
+    @include Flexible(flex-start,flex-start,column,wrap,5px);
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      z-index: 2;  
+  }
+  
+  .left_bottom_img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease-in-out;
+  }
+  
+  .left_bottom_img:hover img {
+      transform: scale(1.1);
+  }
+  h2 {
+    font-size: 13px;
+    line-height: 23px;
+    margin-top: 7px;
+    color: rgba(255, 255, 255, 0.6);
+
+  
+  }
+  h1{
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 7px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+
+  }
+
+  .shop_btn {
+    margin-top: 16px;
+    padding: 10px 14px;
+    border:2px solid rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+    a{
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    }
+    &:hover{
+      border:2px solid white;
+    }
+  }
+  }
+  .arrival_menu{
+    @include Flexible(center,space-between,row,wrap,0px);
+    margin-top: 20px;
+    border-bottom: 2px solid #E4E4E4;
+    .left_part{
+      @include Flexible(center,flex-start,row,wrap,0px);
+
+    }
+    .left_menu{
+      h1{
+        font-size: 20px;
+        color: #242424;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-right: 30px;
+        
+        
+      }
+    }
+    .right_menu ul {
+      list-style: none; 
+      padding: 0;
+      margin: 0;
+      display: flex; 
+  }
+  
+  .right_menu ul li {
+      margin-right: 15px;
+      text-transform: uppercase;
+
+  }
+  
+  .right_menu ul li:first-child a {
+      color: #558063;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+  }
+  
+  .right_menu ul li:not(:first-child) a {
+      color: #333; 
+      transition: color 0.3s ease; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+  }
+  
+  .right_menu ul li:not(:first-child) a:hover {
+      color: #558063; 
+  }
+  
+  .icons{
+    @include Flexible(center, center, row, wrap, 4px); 
+    font-size: 27px;
+    color: i#333;
+
+  }
+
+  }
+  .items {
+    @include Flexible(center, center, row, wrap, 10px); 
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+  
+    .items_contain {
+      @include Flexible(center, flex-start, column, wrap, 0px);   
+      width: 231px; 
+      height: 370px; 
+      overflow: hidden;
+      .imgpart {
+        position: relative; 
+        display: inline-block;
+        .badge {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          width: 50px; 
+          height: 50px; 
+          background-color: #438E44; 
+          color: white; 
+          border-radius: 50%; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          font-weight: bold;
+          text-transform: uppercase;
+          z-index: 10; 
+          &:nth-of-type(1) .badge {
+            display: flex;
+          }
+          &:not(:nth-of-type(1)) .badge {
+            display: none;
+          }
+        }
+        
+        
+        img {
+          display: block; 
+          width: 100%; 
+          height: auto; 
+        }
+      
+        .icon_bar {
+          position: absolute;
+          bottom: 10px;          
+          width: 80%; 
+          height: 50px;
+          background: white; 
+          display: flex; 
+          justify-content: center; 
+          align-items: center; 
+          opacity: 0; 
+          left: 50%; 
+          transform: translateX(-50%);
+          transform: translateY(100%) translateX(-50%);
+          transition: opacity 0.3s ease, transform 0.3s ease; 
+          pointer-events: none; 
+      
+          
+          i {
+            color: #333; 
+            font-size: 22px;
+            margin: 0 10px;
+            cursor: pointer; 
+            &:hover{
+              color: #E4E4E4;
+            }
+          }
+        }
+      
+        &:hover .icon_bar {
+          opacity: 1; 
+          transform: translateY(0) translateX(-50%); 
+          pointer-events: auto; 
+        }
+      }
+      
+      
+      .textpart{
+        @include Flexible(center, center, column, nowrap, 7px); 
+        margin-top: 7px; 
+        h1{
+          color: #333;
+          font-size: 14px;
+          font-weight: 700;
+        }
+        h4{
+          color: #a4a0a0;
+          font-size: 13px;
+        }
+        h2{
+          color: #558063;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  
+  
+}
